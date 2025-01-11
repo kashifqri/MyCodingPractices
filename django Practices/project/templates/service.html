@@ -1,0 +1,231 @@
+{% extends "base.html" %}
+{% block content %}
+        <!-- Services Start -->
+        <div class="container-fluid service py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Services</h4>
+                    <h1 class="display-5 mb-4">We Services provided best offer</h1>
+                    <p class="mb-0">Our services are designed to provide you with the best solutions tailored to your unique needs and objectives.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    {% for n in servicesData %}
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src= "{{n.service_icon.url}}" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">{{n.service_title}}</a>
+                                <p class="mb-4">{{n.service_des}}</p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor%}
+
+                    {% comment %} <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-2.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Financial Advisory</a>
+                                <p class="mb-4">Financial advisory services provide expert guidance on investment strategies, risk management, and financial planning.
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-3.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Managements</a>
+                                <p class="mb-4">Management consulting focuses on improving an organization’s performance through strategic planning, operational efficiency, and change management.
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-4.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Supply Optimization</a>
+                                <p class="mb-4">Supply optimization involves analyzing supply chain processes to reduce costs, improve efficiency, and enhance service levels.
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-5.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Hr Consulting</a>
+                                <p class="mb-4">HR consulting helps organizations optimize their human resources strategies to attract, retain, and develop top talent.
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-6.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Marketing Consulting</a>
+                                <p class="mb-4">Marketing consulting enables businesses to craft effective strategies that resonate with target audiences and drive brand loyalty.
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div> {% endcomment %}
+                </div>
+            </div>
+        </div> 
+        <!-- Services End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Testimonial</h4>
+                    <h1 class="display-5 mb-4">Our Clients Riviews</h1>
+                    <p class="mb-0">Our clients' success stories inspire us every day! Here’s what they have to say about their experiences with our options trading services. Discover how we've helped them achieve their financial goals and transform their trading strategies!
+                    </p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="/static/img/testimonial-1.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">Thanks to their expert guidance, I doubled my investment within six months! The strategies they provided are truly game-changers.
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Sophia Turner</h4>
+                                <p class="mb-0">Financial Analyst</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="/static/img/testimonial-2.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">I was new to options trading, but their support made it easy to learn. I can't recommend them enough!
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Sarah L</h4>
+                                <p class="mb-0">Marketing Specialist</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="/static/img/testimonial-3.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">Their comprehensive resources and market analysis have drastically improved my trading results. I'm finally seeing consistent profits!
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">David K</h4>
+                                <p class="mb-0">Software Developer</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="/static/img/testimonial-2.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">The team is incredibly knowledgeable and always available to answer my questions. I feel confident in my trading decisions now!
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Jessica M</h4>
+                                <p class="mb-0">Business Owner</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form method="get">
+            <input type="text" name="servicename" value="" />
+            <input type="submit" value="search"/>
+        </form> 
+
+
+        <!-- Testimonial End -->
+
+{%endblock%}

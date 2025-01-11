@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="bg-light p-5 rounded h-100 wow fadeInUp" data-wow-delay="0.2s">
+    <h4 class="text-primary">Send Your Marksheet</h4>
+    <p class="mb-4">Submit your message.</p>
+    <form method="POST">
+    {% csrf_token %}
+    <div class="row g-4">
+        <div class="col-lg-12 col-xl-6">
+            <div class="form-floating">
+                <input type="text" class="form-control border-0" name="text 1" placeholder="text 1">
+                <label>text 1</label>
+            </div>
+        </div>
+        <div class="col-lg-12 col-xl-6">
+            <div class="form-floating">
+                <input type="text" class="form-control border-0" name="text 2" placeholder="text 2">
+                <label>text 2</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <input type="text" class="form-control border-0" name="text 3" placeholder="text 3">
+                <label>text 3</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <input type="text" class="form-control border-0" name="text 4" placeholder="text 4">
+                <label>text 4</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100 py-3">Marksheet</button>
+        </div>
+        <div class="form-floating">
+            <input type="text" value="{{t}}" class="form-control border-0" name="total" placeholder="total">
+            <label for="total">total</label>
+        </div>   
+        <div class="form-floating">
+            <input type="text" value="{{p}}" class="form-control border-0" name="total" placeholder="total">
+            <label for="percentage">percentage</label>
+        </div> 
+        <div class="form-floating">
+            <input type="text" value="{{div}}" class="form-control border-0" name="total" placeholder="total">
+            <label for="division">division</label>
+        </div> 
+</form>
+{%endblock%}
